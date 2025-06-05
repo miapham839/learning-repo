@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <!-- Basic styling -->
+    <div class="bg-violet-200 h-10 border-2 border-violet-600 rounded-md my-4 mx-1 flex justify-center items-center">
+        <h1 class="text-center text-[20px] text-black-400 font-mono font-extrabold">Hello World</h1>
+    </div>
+
+    <!-- Layouts & Flexbox -->
+    <!-- Flexbox -->
+    <div class="flex flex-row justify-evenly items-center space-x-4">
+        <div class="bg-blue-400 h-16 w-16"></div>
+        <div class="bg-blue-400 h-16 w-16"></div>
+        <div class="bg-blue-400 h-16 w-16"></div>
+    </div>
+    <!-- Grid -->
+    <div class="grid grid-cols-3 gap-2 mt-2 mx-3">
+        <div class="bg-pink-400 h-16"></div>
+        <div class="bg-pink-400 h-16"></div>
+        <div class="bg-pink-400 h-16"></div>
+    </div>
+    <!-- Media Queries  -->
+     <div class="md:block hidden">
+        <p class="text-white">I appear on screen wider than 768px</p>
+     </div>
+     <div class="sm:bg-amber-500 md:bg-amber-700">
+        <p class="text-white">Media Queries</p>
+     </div>
+     <!-- Dark Mode -->
+     <div class="bg-white dark:bg-black">
+      </div>
+</body>
+
+</html>
