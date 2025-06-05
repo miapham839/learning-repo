@@ -2,27 +2,30 @@
 <html>
 
 <head>
-    <title>Rock Paper Scissors</title>
+  <title>Rock Paper Scissors</title>
+  <link href="src/output.css" rel="stylesheet">
 </head>
 
-<body>
-    <p>Rock Paper Scissors</p>
-    <button onclick="
-      playGame('rock');
-    ">Rock</button>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="bg-white rounded-xl shadow-lg p-8 space-y-6 w-full max-w-md text-center">
 
-    <button onclick="
-      playGame('paper');
-    ">Paper</button>
+    <p class="text-2xl font-bold text-gray-800">Rock Paper Scissors</p>
 
-    <button onclick="
-      playGame('scissors');
-    ">Scissors</button>
-    <button onclick="
-      resetScore();
-    ">Reset scores</button>
+    <div class="space-x-4">
+      <button onclick="playGame('rock')"
+        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">Rock</button>
 
-    <script src="script.js"></script>
+      <button onclick="playGame('paper')"
+        class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition">Paper</button>
+
+      <button onclick="playGame('scissors')"
+        class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">Scissors</button>
+    </div>
+
+    <button onclick="resetScore()" class="text-sm text-gray-500 hover:underline">Reset scores</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
